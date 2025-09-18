@@ -107,4 +107,10 @@ pip install -r requirements.txt
 git checkout -b feature-name
 ```
 
-* Qu
+* Quickly clean & rebuild venv:
+
+```bash
+rm -rf venv && python -m venv venv
+```
+
+* In VS Code: `Ctrl+Shift+P → Python: Select Interpreter → choose local venv`
