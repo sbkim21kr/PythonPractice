@@ -43,3 +43,24 @@ Sub MY_SQL_2_INSERT()
     ' A query is a request for information or action (INSERT, SELECT, UPDATE, DELETE)
 
     '--------------
+
+🗒️ Key Notes
+• Connection String
+
+Uses MySQL ODBC 5.3 ANSI Driver to connect to the local MySQL database cimon with credentials.<br>
+
+• ADO Objects
+
+ADODB.Connection: Manages the database connection.<br>
+
+ADODB.Recordset: Can hold results from queries.<br>
+
+• SQL Query
+
+INSERT INTO cimon.order VALUES (...) adds a new record to the table.<br>
+
+SCADA tag values (SCADA_주문자명 and SCADA_수량) are inserted dynamically.<br>
+
+• Clean-Up
+
+Always close the connection and release objects to free resources.<br>

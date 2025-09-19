@@ -64,3 +64,26 @@ Sub MY_SQL_1_1_GRID_dataSet()
     Set conn = Nothing
 
 End Sub
+
+🗒️ Key Notes
+• GRID
+
+Refers to a data grid or grid view for tabular display.<br>
+
+• SetTagVal / GetTagVal
+
+SCADA-specific functions to write and read tag values.<br>
+
+• ADO Objects
+
+ADODB.Connection: Manages the database connection.<br>
+
+ADODB.Recordset: Holds the query results.<br>
+
+• Connection String
+
+Uses MySQL ODBC 5.3 ANSI Driver and local credentials.<br>
+
+• Clean-Up
+
+Always close connections and release objects to free resources.<br>

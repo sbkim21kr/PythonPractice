@@ -39,3 +39,24 @@ Sub MY_SQL_1_3_GRID_리스트컨트롤()
     Next i
 
 End Sub
+
+🗒️ Key Notes
+• RunScript "MY_SQL_1_1_GRID_dataSet"
+
+Runs the dataset script to ensure the SCADA tags are populated before updating the list control.<br>
+
+• wcGridCommand "MYSQL_리스트컨트롤", 100, 0, 0
+
+MYSQL_리스트컨트롤: Name of the SCADA list control.<br>
+
+100: Command code (commonly clears or resets the grid/list).<br>
+
+0, 0: Unused/default parameters for this command.<br>
+
+• wcGridSetData
+
+Populates rows and columns of the list control with tag values dynamically fetched from the database.<br>
+
+• Sleep(300)
+
+Pauses execution briefly (300 ms) to allow previous commands or data retrieval to complete before updating the grid.<br>

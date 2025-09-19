@@ -48,3 +48,24 @@ Sub MY_SQL_4_DELETE()
     conn.Close
 
 End Sub
+
+🗒️ Key Notes
+• Connection String
+
+Uses MySQL ODBC 5.3 ANSI Driver to connect to the local MySQL database cimon with credentials.<br>
+
+• ADO Objects
+
+ADODB.Connection: Manages the database connection.<br>
+
+ADODB.Recordset: Can hold results from queries (not strictly needed for DELETE).<br>
+
+• SQL Query
+
+DELETE FROM cimon.order WHERE name = ... removes the record matching the given name.<br>
+
+SCADA tag value (SCADA_주문자명) is used dynamically.<br>
+
+• Clean-Up
+
+Always close the connection to free resources.<br>

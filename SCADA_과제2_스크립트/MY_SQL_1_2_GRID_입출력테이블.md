@@ -47,3 +47,24 @@ Sub MY_SQL_1_2_GRID_입출력테이블()
     Next i
 
 End Sub
+
+🗒️ Key Notes
+• RunScript "MY_SQL_1_1_GRID_dataSet"
+
+Runs another script to initialize and retrieve the dataset before updating the grid.<br>
+
+• wcGridCommand "MYSQL_입출력테이블", 7, 0, 0
+
+MYSQL_입출력테이블: Name of the SCADA grid control.<br>
+
+7: Command code (commonly means refresh or reload).<br>
+
+0, 0: Additional parameters, unused or default for this command.<br>
+
+• wcGridSetData
+
+Populates the grid by setting values in specific rows and columns dynamically using tag values retrieved from the database.<br>
+
+• Sleep(300)
+
+Adds a short delay (300 ms) to ensure the dataset is ready before updating the grid.<br>

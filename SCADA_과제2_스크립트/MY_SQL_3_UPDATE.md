@@ -51,3 +51,24 @@ Sub MY_SQL_3_UPDATE()
     Set conn = Nothing
 
 End Sub
+
+🗒️ Key Notes
+• Connection String
+
+Uses MySQL ODBC 5.3 ANSI Driver to connect to the local MySQL database cimon with credentials.<br>
+
+• ADO Objects
+
+ADODB.Connection: Manages the database connection.<br>
+
+ADODB.Recordset: Can hold results from queries.<br>
+
+• SQL Query
+
+UPDATE cimon.order SET count = ... WHERE name = ... updates the count field for the record matching the given name.<br>
+
+SCADA tag values (SCADA_주문자명 and SCADA_수량) are used dynamically.<br>
+
+• Clean-Up
+
+Always close the connection and release objects to free resources.<br>
