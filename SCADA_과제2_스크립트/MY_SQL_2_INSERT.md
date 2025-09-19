@@ -43,6 +43,14 @@ Sub MY_SQL_2_INSERT()
     ' A query is a request for information or action (INSERT, SELECT, UPDATE, DELETE)
 
     '--------------
+    '-------------------------------------------------------------
+    ' 4. Close connection and clean up
+    '-------------------------------------------------------------
+    conn.Close
+    Set rs = Nothing
+    Set conn = Nothing
+
+End Sub
 
 🗒️ Key Notes
 • Connection String
