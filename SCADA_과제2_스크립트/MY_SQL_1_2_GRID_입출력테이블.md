@@ -35,6 +35,10 @@ Sub MY_SQL_1_2_GRID_입출력테이블()
         주문자명_변수 = GetTagVal("MY_SQL.SCADA_주문자명" + Format(i-1, "_000")) 
         wcGridSetData "MYSQL_입출력테이블", 1, i, 주문자명_변수
 
+```
+### wcGridSetData(GridName, Column, Row, Value)
+```
+
         '🔍 What wcGridSetData Does
         'It allows you to:
         'Insert or update a specific cell in a grid

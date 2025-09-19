@@ -41,7 +41,10 @@ Sub MY_SQL_1_1_GRID_dataSet()
     '-------------------------------------------------------------
     a = "SELECT * FROM cimon.order"
     Set rs1 = conn.Execute(a)
-
+```
+### Executing an SQL query simply means sending the SQL statement to the database to perform its action. What happens next depends on the type of SQL query:
+### the * is a wildcard that means “all columns”.
+```
     '-------------------------------------------------------------
     ' ### 4. Populate SCADA tags with retrieved data
     '-------------------------------------------------------------
@@ -86,4 +89,10 @@ Uses MySQL ODBC 5.3 ANSI Driver and local credentials.<br>
 
 • Clean-Up
 
-Always close connections and release objects to free resources.<br>
+Always close connections and release objects to free resources.
+
+```
+
+### The recordset pointer is the key concept: it determines which row Fields(0) and Fields(1) are currently referencing. Every time you call MoveNext, the pointer moves to the next row, and the Fields values update accordingly.
+
+### It’s the “cursor” that lets you loop through a recordset row by row, which is exactly what your SCADA tags loop is doing.
