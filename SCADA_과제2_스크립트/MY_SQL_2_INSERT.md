@@ -35,6 +35,13 @@ Sub MY_SQL_2_INSERT()
     a = "INSERT INTO cimon.order VALUES ('" & GetTagVal("MY_SQL.SCADA_주문자명") & "'," & GetTagVal("MY_SQL.SCADA_수량") & ")"
     ' cimon.order: table 'order' inside schema 'cimon'
 
+```
+### The keyword VALUES takes a list of values corresponding to the columns in the table.
+
+### Here, the table cimon.order probably has two columns (e.g., name and count).
+```
+
+
     Set rs1 = conn.Execute(a)
     ' Executes the SQL query and stores the result in rs1
     ' rs1 contains any returned rows (if applicable)
