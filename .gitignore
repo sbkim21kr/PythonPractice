@@ -1,14 +1,44 @@
-# Virtual environment
-venv/
-
-# Python bytecode
+# ----------------------------
+# Python
+# ----------------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.pycache/
+*.egg-info/
+*.eggs/
+*.whl
 
-# OS-specific files
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----------------------------
+# VS Code
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# OS files
+# ----------------------------
 .DS_Store
 Thumbs.db
 
-# IDE/project files
-.vscode/
-.idea/
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+
+# ----------------------------
+# Python test outputs
+# ----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
