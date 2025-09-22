@@ -1,14 +1,37 @@
-# Virtual environment
-venv/
-
-# Python bytecode
+# 🐍 Python
 __pycache__/
 *.py[cod]
+*$py.class
 
-# OS-specific files
+# 📦 Virtual environments
+venv/
+.env/
+.venv/
+env/
+
+# 📜 Logs and databases
+*.log
+*.sqlite3
+
+# 🧪 Test/coverage reports
+.coverage
+.pytest_cache/
+htmlcov/
+
+# 🖥️ OS-specific files
 .DS_Store
 Thumbs.db
 
-# IDE/project files
+# 🛠 IDE/project files
 .vscode/
 .idea/
+*.iml
+
+# 📂 Build/packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 📑 Jupyter Notebook checkpoints
+.ipynb_checkpoints
