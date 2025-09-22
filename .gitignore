@@ -35,3 +35,9 @@ dist/
 
 # 📑 Jupyter Notebook checkpoints
 .ipynb_checkpoints
+
+# disregard large files in DeepLearning folder
+DeepLearning/yolo/yolov3.weights
+DeepLearning/yolo/darknet/cfg/yolov3.cfg
+DeepLearning/yolo/darknet/data/coco.names
+DeepLearning/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4
