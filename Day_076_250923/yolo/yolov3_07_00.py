@@ -3,13 +3,13 @@ import cv2
 import numpy as np
 
 # YOLO 모델 및 설정 파일 경로 (실제 경로로 변경 필요)
-model_cfg = "Programming/PythonPractice/Day_076_250923/yolo/darknet/cfg/yolov3.cfg"
-model_weights = "Programming/PythonPractice/Day_076_250923/yolo/yolov3.weights"
+model_cfg = "Day_076_250923/yolo/darknet/cfg/yolov3.cfg"
+model_weights = "Day_076_250923/yolo/yolov3.weights"
 net = cv2.dnn.readNetFromDarknet(model_cfg, model_weights)
 
 # 클래스 이름 파일 (coco names)
 classes = []
-with open("Programming/PythonPractice/Day_076_250923/yolo/darknet/data/coco.names", "r") as f:
+with open("Day_076_250923/yolo/darknet/data/coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
@@ -17,7 +17,7 @@ colors = [(255, 0, 0)] # 바운딩 박스 색깔 (빨간색)
 
 # 비디오 캡쳐 또는 이미지 읽기
 # cap = cv2.VideoCapture("Programming/PythonPractice/Day_076_250923/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
-cap = cv2.VideoCapture("Programming/PythonPractice/Day_076_250923/yolo/darknet/data/vtest.mp4") # 또는 cv2.imread("image.jpg")
+cap = cv2.VideoCapture("Day_076_250923/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
 while True:
     ret, frame = cap.read() # 또는 frame = 이미지
     if not ret: break
