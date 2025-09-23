@@ -13,11 +13,11 @@ with open("Day_076_250923/yolo/darknet/data/coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
-colors = [(255, 0, 0)] # 바운딩 박스 색깔 (빨간색)
+colors = [(0, 0, 255)] # 바운딩 박스 색깔 (빨간색)
 
 # 비디오 캡쳐 또는 이미지 읽기
 # cap = cv2.VideoCapture("Programming/PythonPractice/Day_076_250923/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
-cap = cv2.VideoCapture("Day_076_250923/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
+cap = cv2.VideoCapture("Day_076_250923/yolo/darknet/data/vtest.mp4") # 또는 cv2.imread("image.jpg")
 while True:
     ret, frame = cap.read() # 또는 frame = 이미지
     if not ret: break
