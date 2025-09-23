@@ -8,20 +8,20 @@ import cv2
 import numpy as np
 
 # YOLO 모델 및 설정 파일 경로 (실제 경로로 변경 필요)
-model_cfg = "DeepLearning/yolo/darknet/cfg/yolov3.cfg"
-model_weights = "DeepLearning/yolo/yolov3.weights"
+model_cfg = "Programming/PythonPractice/DeepLearning/yolo/darknet/cfg/yolov3.cfg"
+model_weights = "Programming/PythonPractice/DeepLearning/yolo/yolov3.weights"
 net = cv2.dnn.readNetFromDarknet(model_cfg, model_weights)
 
 # 클래스 이름 파일 (coco names)
 classes = []
-with open("DeepLearning/yolo/darknet/data/coco.names", "r") as f:
+with open("Programming/PythonPractice/DeepLearning/yolo/darknet/data/coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 colors = [(0, 0, 255)] # 바운딩 박스 색깔 (빨간색)
 
 # 비디오 캡쳐 또는 이미지 읽기
-cap = cv2.VideoCapture("DeepLearning/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
+cap = cv2.VideoCapture("Programming/PythonPractice/DeepLearning/yolo/darknet/data/KakaoTalk_20250922_144402790.mp4") # 또는 cv2.imread("image.jpg")
 
 while True:
     ret, frame = cap.read() # 또는 frame = 이미지

@@ -1,1 +1,27 @@
 *.ipynb merge=nbdime
+
+
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files to use LF (Unix-style)
+*.py text eol=lf
+*.ipynb text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# Windows-specific files can use CRLF if needed
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files - no line ending normalization
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.exe binary
+*.dll binary
