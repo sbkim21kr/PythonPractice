@@ -2,7 +2,7 @@
 
 This procedure updates and refreshes the **MYSQL_입출력테이블** grid in the SCADA system with data retrieved from the database.<br>  
 
----
+
 
 ## 📑 Code  
 
