@@ -40,4 +40,12 @@ This is a **Markdown cell**. It is used to explain code or organize ideas.
 
 [Visit Python.org](https://www.python.org)
 
-![Alt text](https://via.placeholder.com/150)
+
+<img src="https://www.python.org/static/community_logos/python-logo.png" width="500">
+
+<p align="center">
+  <img src="https://www.python.org/static/community_logos/python-logo.png" width="100">
+</p>
+
+
+[![Python Logo](https://www.python.org/static/community_logos/python-logo.png)](https://www.python.org)
