@@ -9,6 +9,10 @@ def get_age(birth_date: date) -> int:
     age = today.year - birth_date.year - (0 if birthday_passed else 1)
     return age
 
+# birth_date: date → The input must be a date object (from datetime.date)
+
+# -> int → The function will return an integer — in this case, the person's age
+
 def get_weekday_name(date_obj: date, lang='ko') -> str:
     """주어진 날짜 객체의 요일 이름을 반환합니다. (기본: 한국어)"""
     # date_obj.weekday()는 월요일=0, 화요일=1, ..., 일요일=6 을 반환
@@ -38,7 +42,7 @@ def add_business_days(start_date: date, days_to_add: int) -> date:
     return current_date
 
 # 사용 예시
-birth = date(1995, 5, 15)
+birth = date(1981, 10, 25)
 print(f"생년월일 {birth} 기준 나이: {get_age(birth)}세")
 
 today_date = datetime.now().date()
