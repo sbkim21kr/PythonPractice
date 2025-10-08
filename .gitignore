@@ -42,4 +42,4 @@ dist/
 *.mp4
 *.weights
 *.cfg
-*.names
+*.names.venv/
